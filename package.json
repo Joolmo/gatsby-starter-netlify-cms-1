@@ -41,7 +41,7 @@
         "prop-types": "^15.6.0",
         "react": "^16.8.4",
         "react-dom": "^16.8.4",
-        "react-helmet": "^5.2.0",
+        "react-helmet": "^6.0.0",
         "react-router-dom": "5.2.0",
         "styled-components": "^5.0.0",
         "stylelint": "^13.0.0",
@@ -76,7 +76,7 @@
     },
     "devDependencies": {
         "@types/lodash": "^4.14.161",
-        "@types/react-helmet": "^5.0.16",
+        "@types/react-helmet": "^6.0.0",
         "babel-plugin-styled-components": "^1.10.6",
         "babel-preset-gatsby": "^0.5.0",
         "gatsby-plugin-graphql-codegen": "^2.0.1",
