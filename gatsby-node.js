@@ -8,17 +8,15 @@ exports.createPages = ({ actions, graphql }) => {
 
     return graphql(`
         {
-            allMarkdownRemark(limit: 1000) {
+            allMdx(limit: 1000) {
                 edges {
                     node {
-                        id
-                        fields {
-                            slug
-                        }
-                        frontmatter {
-                            tags
-                            templateKey
-                        }
+                      slug
+                      id
+                      frontmatter {
+                        tags
+                        templateKey
+                      }
                     }
                 }
             }
@@ -29,12 +27,12 @@ exports.createPages = ({ actions, graphql }) => {
             return Promise.reject(result.errors)
         }
 
-        const posts = result.data.allMarkdownRemark.edges
+        const posts = result.data.allMdx.edges
 
         posts.forEach(edge => {
             const id = edge.node.id
             createPage({
-                path: edge.node.fields.slug,
+                path: `/${edge.node.slug}"`,
                 tags: edge.node.frontmatter.tags,
                 component: path.resolve(
                     `src/templates/${String(
@@ -78,7 +76,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const { createNodeField } = actions
     fmImagesToRelative(node) // convert image paths for gatsby images
 
-    if (node.internal.type === `MarkdownRemark`) {
+    if (node.internal.type === `Mdx`) {
         const value = createFilePath({ node, getNode })
         createNodeField({
             name: `slug`,

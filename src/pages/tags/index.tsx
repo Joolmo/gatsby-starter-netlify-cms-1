@@ -6,7 +6,7 @@ import React from 'react'
 
 const TagsPage = ({
     data: {
-        allMarkdownRemark: { group },
+        allMdx: { group },
         site: {
             siteMetadata: { title }
         }
@@ -51,7 +51,7 @@ export const tagPageQuery = graphql`
                 title
             }
         }
-        allMarkdownRemark(limit: 1000) {
+        allMdx(limit: 1000) {
             group(field: frontmatter___tags) {
                 fieldValue
                 totalCount

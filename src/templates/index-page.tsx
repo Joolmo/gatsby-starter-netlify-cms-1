@@ -9,7 +9,7 @@ import Layout from "../components/Layout"
 
 type IndexPageTemplateProps = RecursiveNonNullable<
     IndexPageTemplateQuery
->["markdownRemark"]["frontmatter"]
+>["mdx"]["frontmatter"]
 
 export const IndexPageTemplate = ({
     image,
@@ -142,7 +142,7 @@ const IndexPage = ({
 }: {
     data: RecursiveNonNullable<IndexPageTemplateQuery>
 }) => {
-    const { markdownRemark: post } = data
+    const { mdx: post } = data
     return (
         <Layout>
             <IndexPageTemplate
@@ -162,7 +162,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
     query IndexPageTemplate {
-        markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+        mdx(frontmatter: { templateKey: { eq: "index-page" } }) {
             frontmatter {
                 title
                 image {

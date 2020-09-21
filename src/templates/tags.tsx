@@ -8,17 +8,17 @@ const TagRoute = (props: {
     data: RecursiveNonNullable<TagPageQuery>
     pageContext: { tag: string }
 }) => {
-    const posts = props.data.allMarkdownRemark.edges
+    const posts = props.data.allMdx.edges
     const postLinks = posts.map(post => (
-        <li key={post.node.fields.slug}>
-            <Link to={post.node.fields.slug!}>
+        <li key={post.node.slug}>
+            <Link to={"/"+post.node.slug!}>
                 <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
             </Link>
         </li>
     ))
     const tag = props.pageContext.tag
     const title = props.data.site.siteMetadata.title
-    const totalCount = props.data.allMarkdownRemark.totalCount
+    const totalCount = props.data.allMdx.totalCount
     const tagHeader = `${totalCount} post${
         totalCount === 1 ? "" : "s"
     } tagged with “${tag}”`
@@ -57,7 +57,7 @@ export const tagPageQuery = graphql`
                 title
             }
         }
-        allMarkdownRemark(
+        allMdx(
             limit: 1000
             sort: { fields: [frontmatter___date], order: DESC }
             filter: { frontmatter: { tags: { in: [$tag] } } }
@@ -65,9 +65,7 @@ export const tagPageQuery = graphql`
             totalCount
             edges {
                 node {
-                    fields {
-                        slug
-                    }
+                    slug
                     frontmatter {
                         title
                     }

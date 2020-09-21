@@ -1,7 +1,8 @@
 import { BlogPostByIdQuery } from "types/graphql-types"
 import { Link, graphql } from "gatsby"
 import { kebabCase } from "lodash"
-import Content, { HTMLContent } from "../components/Content"
+import Content, { HTMLContent, MDXContent } from "../components/Content"
+import { MDXProvider } from "@mdx-js/react"
 import Helmet from "react-helmet"
 import Layout from "../components/Layout"
 import React from "react"
@@ -67,27 +68,28 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
 const BlogPost: React.FC<{
     data: BlogPostByIdQuery
 }> = ({ data }) => {
-    const { markdownRemark: post } = data
-
+    const { mdx: post } = data
+    const shortcodes = {}
     return (
-        <Layout>
-            <BlogPostTemplate
-                content={post?.html}
-                contentComponent={HTMLContent}
-                description={post?.frontmatter?.description}
-                helmet={
-                    <Helmet titleTemplate="%s | Blog">
-                        <title>{`${post?.frontmatter?.title}`}</title>
-                        <meta
-                            name="description"
-                            content={`${post?.frontmatter?.description}`}
-                        />
-                    </Helmet>
-                }
-                tags={post?.frontmatter?.tags}
-                title={post?.frontmatter?.title}
-            />
-        </Layout>
+        <MDXProvider components={shortcodes}>
+            <Layout>
+                <BlogPostTemplate
+                    content={post?.body}
+                    contentComponent={MDXContent}
+                    description={post?.frontmatter?.description}
+                    helmet={
+                        <Helmet titleTemplate="%s | Blog">
+                            <title>{`${post?.frontmatter?.title}`}</title>
+                            <meta
+                                name="description"
+                                content={`${post?.frontmatter?.description}`}                            />
+                        </Helmet>
+                    }
+                    tags={post?.frontmatter?.tags}
+                    title={post?.frontmatter?.title}
+                />
+            </Layout>
+        </MDXProvider>
     )
 }
 
@@ -95,15 +97,15 @@ export default BlogPost
 
 export const pageQuery = graphql`
     query BlogPostByID($id: String!) {
-        markdownRemark(id: { eq: $id }) {
+        mdx(id: { eq: $id }) {
             id
-            html
             frontmatter {
-                date(formatString: "MMMM DD, YYYY")
-                title
-                description
                 tags
+                description
+                title
+                date
             }
+            body
         }
     }
 `

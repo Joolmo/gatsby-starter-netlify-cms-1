@@ -1,6 +1,6 @@
-import { MarkdownRemark } from "types/graphql-types"
+import { AboutPageQuery, MarkdownRemark } from "types/graphql-types"
 import { graphql } from "gatsby"
-import Content, { HTMLContent } from "../components/Content"
+import Content, { HTMLContent, MDXContent } from "../components/Content"
 import Layout from "../components/Layout"
 import React from "react"
 
@@ -38,21 +38,15 @@ export const AboutPageTemplate: React.FC<AboutPageTemplateProps> = ({
     )
 }
 
-interface AboutPageProps {
-    data: {
-        markdownRemark: MarkdownRemark
-    }
-}
-
-const AboutPage: React.FC<AboutPageProps> = ({ data }) => {
-    const { markdownRemark: post } = data
+const AboutPage: React.FC<{data: AboutPageQuery}> = ({ data }) => {
+    const { mdx: post } = data
 
     return (
         <Layout>
             <AboutPageTemplate
-                contentComponent={HTMLContent}
-                title={post.frontmatter?.title}
-                content={post.html}
+                contentComponent={MDXContent}
+                title={post?.frontmatter?.title}
+                content={post?.body}
             />
         </Layout>
     )
@@ -62,8 +56,8 @@ export default AboutPage
 
 export const aboutPageQuery = graphql`
     query AboutPage($id: String!) {
-        markdownRemark(id: { eq: $id }) {
-            html
+        mdx(id: { eq: $id }) {
+            body
             frontmatter {
                 title
             }

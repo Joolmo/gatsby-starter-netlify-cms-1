@@ -17,7 +17,7 @@ export const ProductPageTemplate = ({
     testimonials,
     full_image,
     pricing
-}: RecursiveNonNullable<ProductPageQuery>["markdownRemark"]["frontmatter"]) => (
+}: RecursiveNonNullable<ProductPageQuery>["mdx"]["frontmatter"]) => (
     <div className="content">
         <div
             className="full-width-image-container margin-top-0"
@@ -120,7 +120,7 @@ const ProductPage = ({
 }: {
     data: RecursiveNonNullable<ProductPageQuery>
 }) => {
-    const { frontmatter } = data.markdownRemark
+    const { frontmatter } = data.mdx
 
     return (
         <Layout>
@@ -143,7 +143,7 @@ export default ProductPage
 
 export const productPageQuery = graphql`
     query ProductPage($id: String!) {
-        markdownRemark(id: { eq: $id }) {
+        mdx(id: { eq: $id }) {
             frontmatter {
                 title
                 image {

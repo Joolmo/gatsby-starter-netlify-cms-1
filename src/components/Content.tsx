@@ -1,19 +1,36 @@
 import PropTypes from "prop-types"
-import React from "react"
+import { MDXProvider } from "@mdx-js/react"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import React, { memo, useCallback } from "react"
 
-export const HTMLContent = ({ content, className }) => (
+interface IContent {
+    content: any,
+    className?: string
+}
+
+export const HTMLContent = ({ content, className }: IContent) => (
     <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
 )
 
-const Content = ({ content, className }) => (
-    <div className={className}>{content}</div>
-)
+export const MDXContent = ({content, className}: IContent) => {
+    const Wrapper = useCallback(
+        ({children}: any) => {
+            if (!!className) {
+                return <div className={className}>{children}</div>
+            } else {
+                return <>{children}</>
+            }
+        },
+        [className],
+    )
 
-Content.propTypes = {
-    content: PropTypes.node,
-    className: PropTypes.string
+    return <Wrapper>
+        <MDXRenderer>{content}</MDXRenderer>
+    </Wrapper>
 }
 
-HTMLContent.propTypes = Content.propTypes
+const Content = ({ content, className }: IContent) => (
+    <div className={className}>{content}</div>
+)
 
 export default Content

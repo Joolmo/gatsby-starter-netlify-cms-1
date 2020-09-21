@@ -8,6 +8,7 @@ module.exports = {
         `gatsby-plugin-typescript`,
         `gatsby-plugin-styled-components`,
         "gatsby-plugin-react-helmet",
+        `gatsby-plugin-mdx`,
         "gatsby-plugin-sass",
         {
             resolve: "gatsby-plugin-graphql-codegen",

@@ -6,8 +6,8 @@ import React from "react"
 class BlogRoll extends React.Component {
     render() {
         const { data } = this.props
-        const { edges: posts } = data.allMarkdownRemark
-
+        const { edges: posts } = data.allMdx
+        debugger
         return (
             <div className="columns is-multiline">
                 {posts &&
@@ -35,8 +35,9 @@ class BlogRoll extends React.Component {
                                     ) : null}
                                     <p className="post-meta">
                                         <Link
+                                            replace={true}
                                             className="title has-text-primary is-size-4"
-                                            to={post.fields.slug}
+                                            to={"/"+post.slug}
                                         >
                                             {post.frontmatter.title}
                                         </Link>
@@ -52,7 +53,7 @@ class BlogRoll extends React.Component {
                                     <br />
                                     <Link
                                         className="button"
-                                        to={post.fields.slug}
+                                        to={"/"+post.slug}
                                     >
                                         Keep Reading →
                                     </Link>
@@ -65,20 +66,12 @@ class BlogRoll extends React.Component {
     }
 }
 
-BlogRoll.propTypes = {
-    data: PropTypes.shape({
-        allMarkdownRemark: PropTypes.shape({
-            edges: PropTypes.array
-        })
-    })
-}
-
 // eslint-disable-next-line react/display-name
 export default () => (
     <StaticQuery
         query={graphql`
             query BlogRollQuery {
-                allMarkdownRemark(
+                allMdx(
                     sort: { order: DESC, fields: [frontmatter___date] }
                     filter: {
                         frontmatter: { templateKey: { eq: "blog-post" } }
@@ -88,9 +81,7 @@ export default () => (
                         node {
                             excerpt(pruneLength: 400)
                             id
-                            fields {
-                                slug
-                            }
+                            slug
                             frontmatter {
                                 title
                                 templateKey
