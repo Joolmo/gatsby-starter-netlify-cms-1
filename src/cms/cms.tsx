@@ -1,6 +1,9 @@
+import React from 'react'
+
 import CMS from "netlify-cms-app"
 import cloudinary from "netlify-cms-media-library-cloudinary"
 import uploadcare from "netlify-cms-media-library-uploadcare"
+import { MdxControl, setupPreview } from 'netlify-cms-widget-mdx';
 
 import AboutPagePreview from "./preview-templates/AboutPagePreview"
 import BlogPostPreview from "./preview-templates/BlogPostPreview"
@@ -14,3 +17,10 @@ CMS.registerPreviewTemplate("index", IndexPagePreview)
 CMS.registerPreviewTemplate("about", AboutPagePreview)
 CMS.registerPreviewTemplate("products", ProductPagePreview)
 CMS.registerPreviewTemplate("blog", BlogPostPreview)
+
+CMS.registerWidget("mdxEditor", MdxControl, setupPreview({scope: {
+    Example: ({children}) => {
+        console.log(children)
+        return <></>
+    }
+}}))

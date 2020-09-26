@@ -837,6 +837,7 @@ export type FileFieldsEnum =
   | 'childMdx___wordCount___paragraphs'
   | 'childMdx___wordCount___sentences'
   | 'childMdx___wordCount___words'
+  | 'childMdx___fields___slug'
   | 'childMdx___id'
   | 'childMdx___parent___id'
   | 'childMdx___parent___parent___id'
@@ -1744,6 +1745,7 @@ export type Mdx = Node & {
   tableOfContents?: Maybe<Scalars['JSON']>;
   timeToRead?: Maybe<Scalars['Int']>;
   wordCount?: Maybe<MdxWordCount>;
+  fields?: Maybe<MdxFields>;
   id: Scalars['ID'];
   parent?: Maybe<Node>;
   children: Array<Node>;
@@ -1791,6 +1793,10 @@ export type MdxEdge = {
   next?: Maybe<Mdx>;
   node: Mdx;
   previous?: Maybe<Mdx>;
+};
+
+export type MdxFields = {
+  slug?: Maybe<Scalars['String']>;
 };
 
 export type MdxFieldsEnum = 
@@ -2025,6 +2031,7 @@ export type MdxFieldsEnum =
   | 'wordCount___paragraphs'
   | 'wordCount___sentences'
   | 'wordCount___words'
+  | 'fields___slug'
   | 'id'
   | 'parent___id'
   | 'parent___parent___id'
@@ -2112,6 +2119,10 @@ export type MdxFieldsEnum =
   | 'internal___owner'
   | 'internal___type';
 
+export type MdxFieldsFilterInput = {
+  slug?: Maybe<StringQueryOperatorInput>;
+};
+
 export type MdxFilterInput = {
   rawBody?: Maybe<StringQueryOperatorInput>;
   fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
@@ -2125,6 +2136,7 @@ export type MdxFilterInput = {
   tableOfContents?: Maybe<JsonQueryOperatorInput>;
   timeToRead?: Maybe<IntQueryOperatorInput>;
   wordCount?: Maybe<MdxWordCountFilterInput>;
+  fields?: Maybe<MdxFieldsFilterInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -2624,6 +2636,7 @@ export type QueryMdxArgs = {
   tableOfContents?: Maybe<JsonQueryOperatorInput>;
   timeToRead?: Maybe<IntQueryOperatorInput>;
   wordCount?: Maybe<MdxWordCountFilterInput>;
+  fields?: Maybe<MdxFieldsFilterInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -3038,13 +3051,11 @@ export type SitePageConnectionGroupArgs = {
 };
 
 export type SitePageContext = {
-  id?: Maybe<Scalars['String']>;
   tag?: Maybe<Scalars['String']>;
   frontmatter?: Maybe<SitePageContextFrontmatter>;
 };
 
 export type SitePageContextFilterInput = {
-  id?: Maybe<StringQueryOperatorInput>;
   tag?: Maybe<StringQueryOperatorInput>;
   frontmatter?: Maybe<SitePageContextFrontmatterFilterInput>;
 };
@@ -3059,11 +3070,11 @@ export type SitePageContextFrontmatter = {
   description?: Maybe<Scalars['String']>;
   intro?: Maybe<SitePageContextFrontmatterIntro>;
   main?: Maybe<SitePageContextFrontmatterMain>;
-  path?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
   featuredpost?: Maybe<Scalars['Boolean']>;
   featuredimage?: Maybe<Scalars['String']>;
   tags?: Maybe<Array<Maybe<Scalars['String']>>>;
+  path?: Maybe<Scalars['String']>;
   testimonials?: Maybe<Array<Maybe<SitePageContextFrontmatterTestimonials>>>;
   full_image?: Maybe<Scalars['String']>;
   pricing?: Maybe<SitePageContextFrontmatterPricing>;
@@ -3079,11 +3090,11 @@ export type SitePageContextFrontmatterFilterInput = {
   description?: Maybe<StringQueryOperatorInput>;
   intro?: Maybe<SitePageContextFrontmatterIntroFilterInput>;
   main?: Maybe<SitePageContextFrontmatterMainFilterInput>;
-  path?: Maybe<StringQueryOperatorInput>;
   date?: Maybe<DateQueryOperatorInput>;
   featuredpost?: Maybe<BooleanQueryOperatorInput>;
   featuredimage?: Maybe<StringQueryOperatorInput>;
   tags?: Maybe<StringQueryOperatorInput>;
+  path?: Maybe<StringQueryOperatorInput>;
   testimonials?: Maybe<SitePageContextFrontmatterTestimonialsFilterListInput>;
   full_image?: Maybe<StringQueryOperatorInput>;
   pricing?: Maybe<SitePageContextFrontmatterPricingFilterInput>;
@@ -3314,7 +3325,6 @@ export type SitePageFieldsEnum =
   | 'internal___owner'
   | 'internal___type'
   | 'isCreatedByStatefulCreatePages'
-  | 'context___id'
   | 'context___tag'
   | 'context___frontmatter___templateKey'
   | 'context___frontmatter___title'
@@ -3329,11 +3339,11 @@ export type SitePageFieldsEnum =
   | 'context___frontmatter___intro___description'
   | 'context___frontmatter___main___heading'
   | 'context___frontmatter___main___description'
-  | 'context___frontmatter___path'
   | 'context___frontmatter___date'
   | 'context___frontmatter___featuredpost'
   | 'context___frontmatter___featuredimage'
   | 'context___frontmatter___tags'
+  | 'context___frontmatter___path'
   | 'context___frontmatter___testimonials'
   | 'context___frontmatter___testimonials___author'
   | 'context___frontmatter___testimonials___quote'
@@ -3389,6 +3399,7 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___plugins___version'
   | 'pluginCreator___pluginOptions___plugins___browserAPIs'
   | 'pluginCreator___pluginOptions___plugins___pluginFilepath'
+  | 'pluginCreator___pluginOptions___defaultLayouts___default'
   | 'pluginCreator___pluginOptions___fileName'
   | 'pluginCreator___pluginOptions___path'
   | 'pluginCreator___pluginOptions___name'
@@ -3595,6 +3606,7 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___plugins___pluginOptions___destinationDir'
   | 'pluginOptions___plugins___browserAPIs'
   | 'pluginOptions___plugins___pluginFilepath'
+  | 'pluginOptions___defaultLayouts___default'
   | 'pluginOptions___fileName'
   | 'pluginOptions___path'
   | 'pluginOptions___name'
@@ -3720,6 +3732,7 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 
 export type SitePluginPluginOptions = {
   plugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPlugins>>>;
+  defaultLayouts?: Maybe<SitePluginPluginOptionsDefaultLayouts>;
   fileName?: Maybe<Scalars['String']>;
   path?: Maybe<Scalars['String']>;
   name?: Maybe<Scalars['String']>;
@@ -3731,8 +3744,17 @@ export type SitePluginPluginOptions = {
   pathCheck?: Maybe<Scalars['Boolean']>;
 };
 
+export type SitePluginPluginOptionsDefaultLayouts = {
+  default?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsDefaultLayoutsFilterInput = {
+  default?: Maybe<StringQueryOperatorInput>;
+};
+
 export type SitePluginPluginOptionsFilterInput = {
   plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
+  defaultLayouts?: Maybe<SitePluginPluginOptionsDefaultLayoutsFilterInput>;
   fileName?: Maybe<StringQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   name?: Maybe<StringQueryOperatorInput>;
@@ -3842,16 +3864,6 @@ export type AboutPageQueryVariables = Exact<{
 export type AboutPageQuery = { mdx?: Maybe<(
     Pick<Mdx, 'body'>
     & { frontmatter?: Maybe<Pick<MdxFrontmatter, 'title'>> }
-  )> };
-
-export type BlogPostByIdQueryVariables = Exact<{
-  id: Scalars['String'];
-}>;
-
-
-export type BlogPostByIdQuery = { mdx?: Maybe<(
-    Pick<Mdx, 'id' | 'body'>
-    & { frontmatter?: Maybe<Pick<MdxFrontmatter, 'tags' | 'description' | 'title' | 'date'>> }
   )> };
 
 export type IndexPageTemplateQueryVariables = Exact<{ [key: string]: never; }>;

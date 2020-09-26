@@ -2,7 +2,7 @@ import { ProductPageTemplate } from "../../templates/product-page"
 import PropTypes from "prop-types"
 import React from "react"
 
-const ProductPagePreview = ({ entry, getAsset }) => {
+const ProductPagePreview = ({ entry, getAsset }: any) => {
     const entryBlurbs = entry.getIn(["data", "intro", "blurbs"])
     const blurbs = entryBlurbs ? entryBlurbs.toJS() : []
 

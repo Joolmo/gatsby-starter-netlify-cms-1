@@ -1,31 +1,42 @@
-import { BlogPostByIdQuery } from "types/graphql-types"
 import { Link, graphql } from "gatsby"
 import { kebabCase } from "lodash"
-import Content, { HTMLContent, MDXContent } from "../components/Content"
 import { MDXProvider } from "@mdx-js/react"
 import Helmet from "react-helmet"
 import Layout from "../components/Layout"
-import React from "react"
+import React, { ReactNode } from "react"
 
 interface BlogPostTemplateProps {
-    content?: string | null
-    contentComponent?: React.FC<any>
+    children: ReactNode
     description?: string | null
     tags?: (string | null)[] | null
     title?: string | null
     helmet?: React.ReactNode | null
 }
 
+interface IBlogTemplateProps {
+    children: ReactNode,
+    path: string,
+    pathContext: {
+        frontmatter: {
+            date: string
+            description: string
+            featuredimage: string
+            featuredpost: boolean
+            tags: string[]
+            templateKey: string
+            title: string
+        }
+    }
+}
+
+
 export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
-    content,
-    contentComponent,
+    children,
     description,
     tags,
     title,
     helmet
 }) => {
-    const PostContent = contentComponent || Content
-
     return (
         <section className="section">
             {helmet || ""}
@@ -36,7 +47,7 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
                             {title}
                         </h1>
                         <p>{description}</p>
-                        <PostContent content={content} />
+                        {children}
                         {tags && tags.length ? (
                             <div style={{ marginTop: `4rem` }}>
                                 <h4>Tags</h4>
@@ -65,47 +76,35 @@ export const BlogPostTemplate: React.FC<BlogPostTemplateProps> = ({
     )
 }
 
-const BlogPost: React.FC<{
-    data: BlogPostByIdQuery
-}> = ({ data }) => {
-    const { mdx: post } = data
-    const shortcodes = {}
+const BlogPost = ({ pathContext: {frontmatter}, children }: IBlogTemplateProps) => {
+    const shortcodes = {
+        Example: ({children}) => {
+            console.log(children);
+            return <></>
+        }
+    }
+
     return (
         <MDXProvider components={shortcodes}>
             <Layout>
-                <BlogPostTemplate
-                    content={post?.body}
-                    contentComponent={MDXContent}
-                    description={post?.frontmatter?.description}
+                <BlogPostTemplate       
+                    description={frontmatter?.description}
                     helmet={
                         <Helmet titleTemplate="%s | Blog">
-                            <title>{`${post?.frontmatter?.title}`}</title>
+                            <title>{`${frontmatter?.title}`}</title>
                             <meta
                                 name="description"
-                                content={`${post?.frontmatter?.description}`}                            />
+                                content={`${frontmatter?.description}`}                            />
                         </Helmet>
                     }
-                    tags={post?.frontmatter?.tags}
-                    title={post?.frontmatter?.title}
-                />
+                    tags={frontmatter?.tags}
+                    title={frontmatter?.title}
+                >
+                    {children}
+                </BlogPostTemplate>
             </Layout>
         </MDXProvider>
-    )
+    ) 
 }
 
 export default BlogPost
-
-export const pageQuery = graphql`
-    query BlogPostByID($id: String!) {
-        mdx(id: { eq: $id }) {
-            id
-            frontmatter {
-                tags
-                description
-                title
-                date
-            }
-            body
-        }
-    }
-`
