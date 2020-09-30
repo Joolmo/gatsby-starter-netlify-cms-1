@@ -24,6 +24,6 @@
         "suppressImplicitAnyIndexErrors": true,
         "target": "es5"
     },
-    "include": ["src", "types"],
+    "include": ["src", "src/types"],
     "exclude": ["node_modules"]
 }

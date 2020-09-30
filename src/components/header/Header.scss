@@ -1,0 +1,15 @@
+#main-header {  
+    display: flex;
+    flex-flow: row nowrap;
+    height: 150px;
+
+    nav {
+        margin-left: auto;
+
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            list-style: none;
+        }
+    }
+}

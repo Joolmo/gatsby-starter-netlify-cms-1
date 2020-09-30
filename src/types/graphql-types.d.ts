@@ -696,134 +696,6 @@ export type FileFieldsEnum =
   | 'childMdx___fileAbsolutePath'
   | 'childMdx___frontmatter___title'
   | 'childMdx___frontmatter___templateKey'
-  | 'childMdx___frontmatter___path'
-  | 'childMdx___frontmatter___image___sourceInstanceName'
-  | 'childMdx___frontmatter___image___absolutePath'
-  | 'childMdx___frontmatter___image___relativePath'
-  | 'childMdx___frontmatter___image___extension'
-  | 'childMdx___frontmatter___image___size'
-  | 'childMdx___frontmatter___image___prettySize'
-  | 'childMdx___frontmatter___image___modifiedTime'
-  | 'childMdx___frontmatter___image___accessTime'
-  | 'childMdx___frontmatter___image___changeTime'
-  | 'childMdx___frontmatter___image___birthTime'
-  | 'childMdx___frontmatter___image___root'
-  | 'childMdx___frontmatter___image___dir'
-  | 'childMdx___frontmatter___image___base'
-  | 'childMdx___frontmatter___image___ext'
-  | 'childMdx___frontmatter___image___name'
-  | 'childMdx___frontmatter___image___relativeDirectory'
-  | 'childMdx___frontmatter___image___dev'
-  | 'childMdx___frontmatter___image___mode'
-  | 'childMdx___frontmatter___image___nlink'
-  | 'childMdx___frontmatter___image___uid'
-  | 'childMdx___frontmatter___image___gid'
-  | 'childMdx___frontmatter___image___rdev'
-  | 'childMdx___frontmatter___image___ino'
-  | 'childMdx___frontmatter___image___atimeMs'
-  | 'childMdx___frontmatter___image___mtimeMs'
-  | 'childMdx___frontmatter___image___ctimeMs'
-  | 'childMdx___frontmatter___image___atime'
-  | 'childMdx___frontmatter___image___mtime'
-  | 'childMdx___frontmatter___image___ctime'
-  | 'childMdx___frontmatter___image___birthtime'
-  | 'childMdx___frontmatter___image___birthtimeMs'
-  | 'childMdx___frontmatter___image___blksize'
-  | 'childMdx___frontmatter___image___blocks'
-  | 'childMdx___frontmatter___image___publicURL'
-  | 'childMdx___frontmatter___image___id'
-  | 'childMdx___frontmatter___image___children'
-  | 'childMdx___frontmatter___heading'
-  | 'childMdx___frontmatter___description'
-  | 'childMdx___frontmatter___intro___blurbs'
-  | 'childMdx___frontmatter___intro___heading'
-  | 'childMdx___frontmatter___intro___description'
-  | 'childMdx___frontmatter___main___heading'
-  | 'childMdx___frontmatter___main___description'
-  | 'childMdx___frontmatter___testimonials'
-  | 'childMdx___frontmatter___testimonials___author'
-  | 'childMdx___frontmatter___testimonials___quote'
-  | 'childMdx___frontmatter___full_image___sourceInstanceName'
-  | 'childMdx___frontmatter___full_image___absolutePath'
-  | 'childMdx___frontmatter___full_image___relativePath'
-  | 'childMdx___frontmatter___full_image___extension'
-  | 'childMdx___frontmatter___full_image___size'
-  | 'childMdx___frontmatter___full_image___prettySize'
-  | 'childMdx___frontmatter___full_image___modifiedTime'
-  | 'childMdx___frontmatter___full_image___accessTime'
-  | 'childMdx___frontmatter___full_image___changeTime'
-  | 'childMdx___frontmatter___full_image___birthTime'
-  | 'childMdx___frontmatter___full_image___root'
-  | 'childMdx___frontmatter___full_image___dir'
-  | 'childMdx___frontmatter___full_image___base'
-  | 'childMdx___frontmatter___full_image___ext'
-  | 'childMdx___frontmatter___full_image___name'
-  | 'childMdx___frontmatter___full_image___relativeDirectory'
-  | 'childMdx___frontmatter___full_image___dev'
-  | 'childMdx___frontmatter___full_image___mode'
-  | 'childMdx___frontmatter___full_image___nlink'
-  | 'childMdx___frontmatter___full_image___uid'
-  | 'childMdx___frontmatter___full_image___gid'
-  | 'childMdx___frontmatter___full_image___rdev'
-  | 'childMdx___frontmatter___full_image___ino'
-  | 'childMdx___frontmatter___full_image___atimeMs'
-  | 'childMdx___frontmatter___full_image___mtimeMs'
-  | 'childMdx___frontmatter___full_image___ctimeMs'
-  | 'childMdx___frontmatter___full_image___atime'
-  | 'childMdx___frontmatter___full_image___mtime'
-  | 'childMdx___frontmatter___full_image___ctime'
-  | 'childMdx___frontmatter___full_image___birthtime'
-  | 'childMdx___frontmatter___full_image___birthtimeMs'
-  | 'childMdx___frontmatter___full_image___blksize'
-  | 'childMdx___frontmatter___full_image___blocks'
-  | 'childMdx___frontmatter___full_image___publicURL'
-  | 'childMdx___frontmatter___full_image___id'
-  | 'childMdx___frontmatter___full_image___children'
-  | 'childMdx___frontmatter___pricing___heading'
-  | 'childMdx___frontmatter___pricing___description'
-  | 'childMdx___frontmatter___pricing___plans'
-  | 'childMdx___frontmatter___subheading'
-  | 'childMdx___frontmatter___mainpitch___title'
-  | 'childMdx___frontmatter___mainpitch___description'
-  | 'childMdx___frontmatter___date'
-  | 'childMdx___frontmatter___featuredpost'
-  | 'childMdx___frontmatter___featuredimage___sourceInstanceName'
-  | 'childMdx___frontmatter___featuredimage___absolutePath'
-  | 'childMdx___frontmatter___featuredimage___relativePath'
-  | 'childMdx___frontmatter___featuredimage___extension'
-  | 'childMdx___frontmatter___featuredimage___size'
-  | 'childMdx___frontmatter___featuredimage___prettySize'
-  | 'childMdx___frontmatter___featuredimage___modifiedTime'
-  | 'childMdx___frontmatter___featuredimage___accessTime'
-  | 'childMdx___frontmatter___featuredimage___changeTime'
-  | 'childMdx___frontmatter___featuredimage___birthTime'
-  | 'childMdx___frontmatter___featuredimage___root'
-  | 'childMdx___frontmatter___featuredimage___dir'
-  | 'childMdx___frontmatter___featuredimage___base'
-  | 'childMdx___frontmatter___featuredimage___ext'
-  | 'childMdx___frontmatter___featuredimage___name'
-  | 'childMdx___frontmatter___featuredimage___relativeDirectory'
-  | 'childMdx___frontmatter___featuredimage___dev'
-  | 'childMdx___frontmatter___featuredimage___mode'
-  | 'childMdx___frontmatter___featuredimage___nlink'
-  | 'childMdx___frontmatter___featuredimage___uid'
-  | 'childMdx___frontmatter___featuredimage___gid'
-  | 'childMdx___frontmatter___featuredimage___rdev'
-  | 'childMdx___frontmatter___featuredimage___ino'
-  | 'childMdx___frontmatter___featuredimage___atimeMs'
-  | 'childMdx___frontmatter___featuredimage___mtimeMs'
-  | 'childMdx___frontmatter___featuredimage___ctimeMs'
-  | 'childMdx___frontmatter___featuredimage___atime'
-  | 'childMdx___frontmatter___featuredimage___mtime'
-  | 'childMdx___frontmatter___featuredimage___ctime'
-  | 'childMdx___frontmatter___featuredimage___birthtime'
-  | 'childMdx___frontmatter___featuredimage___birthtimeMs'
-  | 'childMdx___frontmatter___featuredimage___blksize'
-  | 'childMdx___frontmatter___featuredimage___blocks'
-  | 'childMdx___frontmatter___featuredimage___publicURL'
-  | 'childMdx___frontmatter___featuredimage___id'
-  | 'childMdx___frontmatter___featuredimage___children'
-  | 'childMdx___frontmatter___tags'
   | 'childMdx___slug'
   | 'childMdx___body'
   | 'childMdx___excerpt'
@@ -1804,220 +1676,6 @@ export type MdxFieldsEnum =
   | 'fileAbsolutePath'
   | 'frontmatter___title'
   | 'frontmatter___templateKey'
-  | 'frontmatter___path'
-  | 'frontmatter___image___sourceInstanceName'
-  | 'frontmatter___image___absolutePath'
-  | 'frontmatter___image___relativePath'
-  | 'frontmatter___image___extension'
-  | 'frontmatter___image___size'
-  | 'frontmatter___image___prettySize'
-  | 'frontmatter___image___modifiedTime'
-  | 'frontmatter___image___accessTime'
-  | 'frontmatter___image___changeTime'
-  | 'frontmatter___image___birthTime'
-  | 'frontmatter___image___root'
-  | 'frontmatter___image___dir'
-  | 'frontmatter___image___base'
-  | 'frontmatter___image___ext'
-  | 'frontmatter___image___name'
-  | 'frontmatter___image___relativeDirectory'
-  | 'frontmatter___image___dev'
-  | 'frontmatter___image___mode'
-  | 'frontmatter___image___nlink'
-  | 'frontmatter___image___uid'
-  | 'frontmatter___image___gid'
-  | 'frontmatter___image___rdev'
-  | 'frontmatter___image___ino'
-  | 'frontmatter___image___atimeMs'
-  | 'frontmatter___image___mtimeMs'
-  | 'frontmatter___image___ctimeMs'
-  | 'frontmatter___image___atime'
-  | 'frontmatter___image___mtime'
-  | 'frontmatter___image___ctime'
-  | 'frontmatter___image___birthtime'
-  | 'frontmatter___image___birthtimeMs'
-  | 'frontmatter___image___blksize'
-  | 'frontmatter___image___blocks'
-  | 'frontmatter___image___publicURL'
-  | 'frontmatter___image___childImageSharp___id'
-  | 'frontmatter___image___childImageSharp___children'
-  | 'frontmatter___image___id'
-  | 'frontmatter___image___parent___id'
-  | 'frontmatter___image___parent___children'
-  | 'frontmatter___image___children'
-  | 'frontmatter___image___children___id'
-  | 'frontmatter___image___children___children'
-  | 'frontmatter___image___internal___content'
-  | 'frontmatter___image___internal___contentDigest'
-  | 'frontmatter___image___internal___description'
-  | 'frontmatter___image___internal___fieldOwners'
-  | 'frontmatter___image___internal___ignoreType'
-  | 'frontmatter___image___internal___mediaType'
-  | 'frontmatter___image___internal___owner'
-  | 'frontmatter___image___internal___type'
-  | 'frontmatter___image___childMdx___rawBody'
-  | 'frontmatter___image___childMdx___fileAbsolutePath'
-  | 'frontmatter___image___childMdx___slug'
-  | 'frontmatter___image___childMdx___body'
-  | 'frontmatter___image___childMdx___excerpt'
-  | 'frontmatter___image___childMdx___headings'
-  | 'frontmatter___image___childMdx___html'
-  | 'frontmatter___image___childMdx___mdxAST'
-  | 'frontmatter___image___childMdx___tableOfContents'
-  | 'frontmatter___image___childMdx___timeToRead'
-  | 'frontmatter___image___childMdx___id'
-  | 'frontmatter___image___childMdx___children'
-  | 'frontmatter___heading'
-  | 'frontmatter___description'
-  | 'frontmatter___intro___blurbs'
-  | 'frontmatter___intro___blurbs___text'
-  | 'frontmatter___intro___heading'
-  | 'frontmatter___intro___description'
-  | 'frontmatter___main___heading'
-  | 'frontmatter___main___description'
-  | 'frontmatter___main___image1___alt'
-  | 'frontmatter___main___image2___alt'
-  | 'frontmatter___main___image3___alt'
-  | 'frontmatter___testimonials'
-  | 'frontmatter___testimonials___author'
-  | 'frontmatter___testimonials___quote'
-  | 'frontmatter___full_image___sourceInstanceName'
-  | 'frontmatter___full_image___absolutePath'
-  | 'frontmatter___full_image___relativePath'
-  | 'frontmatter___full_image___extension'
-  | 'frontmatter___full_image___size'
-  | 'frontmatter___full_image___prettySize'
-  | 'frontmatter___full_image___modifiedTime'
-  | 'frontmatter___full_image___accessTime'
-  | 'frontmatter___full_image___changeTime'
-  | 'frontmatter___full_image___birthTime'
-  | 'frontmatter___full_image___root'
-  | 'frontmatter___full_image___dir'
-  | 'frontmatter___full_image___base'
-  | 'frontmatter___full_image___ext'
-  | 'frontmatter___full_image___name'
-  | 'frontmatter___full_image___relativeDirectory'
-  | 'frontmatter___full_image___dev'
-  | 'frontmatter___full_image___mode'
-  | 'frontmatter___full_image___nlink'
-  | 'frontmatter___full_image___uid'
-  | 'frontmatter___full_image___gid'
-  | 'frontmatter___full_image___rdev'
-  | 'frontmatter___full_image___ino'
-  | 'frontmatter___full_image___atimeMs'
-  | 'frontmatter___full_image___mtimeMs'
-  | 'frontmatter___full_image___ctimeMs'
-  | 'frontmatter___full_image___atime'
-  | 'frontmatter___full_image___mtime'
-  | 'frontmatter___full_image___ctime'
-  | 'frontmatter___full_image___birthtime'
-  | 'frontmatter___full_image___birthtimeMs'
-  | 'frontmatter___full_image___blksize'
-  | 'frontmatter___full_image___blocks'
-  | 'frontmatter___full_image___publicURL'
-  | 'frontmatter___full_image___childImageSharp___id'
-  | 'frontmatter___full_image___childImageSharp___children'
-  | 'frontmatter___full_image___id'
-  | 'frontmatter___full_image___parent___id'
-  | 'frontmatter___full_image___parent___children'
-  | 'frontmatter___full_image___children'
-  | 'frontmatter___full_image___children___id'
-  | 'frontmatter___full_image___children___children'
-  | 'frontmatter___full_image___internal___content'
-  | 'frontmatter___full_image___internal___contentDigest'
-  | 'frontmatter___full_image___internal___description'
-  | 'frontmatter___full_image___internal___fieldOwners'
-  | 'frontmatter___full_image___internal___ignoreType'
-  | 'frontmatter___full_image___internal___mediaType'
-  | 'frontmatter___full_image___internal___owner'
-  | 'frontmatter___full_image___internal___type'
-  | 'frontmatter___full_image___childMdx___rawBody'
-  | 'frontmatter___full_image___childMdx___fileAbsolutePath'
-  | 'frontmatter___full_image___childMdx___slug'
-  | 'frontmatter___full_image___childMdx___body'
-  | 'frontmatter___full_image___childMdx___excerpt'
-  | 'frontmatter___full_image___childMdx___headings'
-  | 'frontmatter___full_image___childMdx___html'
-  | 'frontmatter___full_image___childMdx___mdxAST'
-  | 'frontmatter___full_image___childMdx___tableOfContents'
-  | 'frontmatter___full_image___childMdx___timeToRead'
-  | 'frontmatter___full_image___childMdx___id'
-  | 'frontmatter___full_image___childMdx___children'
-  | 'frontmatter___pricing___heading'
-  | 'frontmatter___pricing___description'
-  | 'frontmatter___pricing___plans'
-  | 'frontmatter___pricing___plans___description'
-  | 'frontmatter___pricing___plans___items'
-  | 'frontmatter___pricing___plans___plan'
-  | 'frontmatter___pricing___plans___price'
-  | 'frontmatter___subheading'
-  | 'frontmatter___mainpitch___title'
-  | 'frontmatter___mainpitch___description'
-  | 'frontmatter___date'
-  | 'frontmatter___featuredpost'
-  | 'frontmatter___featuredimage___sourceInstanceName'
-  | 'frontmatter___featuredimage___absolutePath'
-  | 'frontmatter___featuredimage___relativePath'
-  | 'frontmatter___featuredimage___extension'
-  | 'frontmatter___featuredimage___size'
-  | 'frontmatter___featuredimage___prettySize'
-  | 'frontmatter___featuredimage___modifiedTime'
-  | 'frontmatter___featuredimage___accessTime'
-  | 'frontmatter___featuredimage___changeTime'
-  | 'frontmatter___featuredimage___birthTime'
-  | 'frontmatter___featuredimage___root'
-  | 'frontmatter___featuredimage___dir'
-  | 'frontmatter___featuredimage___base'
-  | 'frontmatter___featuredimage___ext'
-  | 'frontmatter___featuredimage___name'
-  | 'frontmatter___featuredimage___relativeDirectory'
-  | 'frontmatter___featuredimage___dev'
-  | 'frontmatter___featuredimage___mode'
-  | 'frontmatter___featuredimage___nlink'
-  | 'frontmatter___featuredimage___uid'
-  | 'frontmatter___featuredimage___gid'
-  | 'frontmatter___featuredimage___rdev'
-  | 'frontmatter___featuredimage___ino'
-  | 'frontmatter___featuredimage___atimeMs'
-  | 'frontmatter___featuredimage___mtimeMs'
-  | 'frontmatter___featuredimage___ctimeMs'
-  | 'frontmatter___featuredimage___atime'
-  | 'frontmatter___featuredimage___mtime'
-  | 'frontmatter___featuredimage___ctime'
-  | 'frontmatter___featuredimage___birthtime'
-  | 'frontmatter___featuredimage___birthtimeMs'
-  | 'frontmatter___featuredimage___blksize'
-  | 'frontmatter___featuredimage___blocks'
-  | 'frontmatter___featuredimage___publicURL'
-  | 'frontmatter___featuredimage___childImageSharp___id'
-  | 'frontmatter___featuredimage___childImageSharp___children'
-  | 'frontmatter___featuredimage___id'
-  | 'frontmatter___featuredimage___parent___id'
-  | 'frontmatter___featuredimage___parent___children'
-  | 'frontmatter___featuredimage___children'
-  | 'frontmatter___featuredimage___children___id'
-  | 'frontmatter___featuredimage___children___children'
-  | 'frontmatter___featuredimage___internal___content'
-  | 'frontmatter___featuredimage___internal___contentDigest'
-  | 'frontmatter___featuredimage___internal___description'
-  | 'frontmatter___featuredimage___internal___fieldOwners'
-  | 'frontmatter___featuredimage___internal___ignoreType'
-  | 'frontmatter___featuredimage___internal___mediaType'
-  | 'frontmatter___featuredimage___internal___owner'
-  | 'frontmatter___featuredimage___internal___type'
-  | 'frontmatter___featuredimage___childMdx___rawBody'
-  | 'frontmatter___featuredimage___childMdx___fileAbsolutePath'
-  | 'frontmatter___featuredimage___childMdx___slug'
-  | 'frontmatter___featuredimage___childMdx___body'
-  | 'frontmatter___featuredimage___childMdx___excerpt'
-  | 'frontmatter___featuredimage___childMdx___headings'
-  | 'frontmatter___featuredimage___childMdx___html'
-  | 'frontmatter___featuredimage___childMdx___mdxAST'
-  | 'frontmatter___featuredimage___childMdx___tableOfContents'
-  | 'frontmatter___featuredimage___childMdx___timeToRead'
-  | 'frontmatter___featuredimage___childMdx___id'
-  | 'frontmatter___featuredimage___childMdx___children'
-  | 'frontmatter___tags'
   | 'slug'
   | 'body'
   | 'excerpt'
@@ -2146,175 +1804,11 @@ export type MdxFilterInput = {
 export type MdxFrontmatter = {
   title: Scalars['String'];
   templateKey?: Maybe<Scalars['String']>;
-  path?: Maybe<Scalars['String']>;
-  image?: Maybe<File>;
-  heading?: Maybe<Scalars['String']>;
-  description?: Maybe<Scalars['String']>;
-  intro?: Maybe<MdxFrontmatterIntro>;
-  main?: Maybe<MdxFrontmatterMain>;
-  testimonials?: Maybe<Array<Maybe<MdxFrontmatterTestimonials>>>;
-  full_image?: Maybe<File>;
-  pricing?: Maybe<MdxFrontmatterPricing>;
-  subheading?: Maybe<Scalars['String']>;
-  mainpitch?: Maybe<MdxFrontmatterMainpitch>;
-  date?: Maybe<Scalars['Date']>;
-  featuredpost?: Maybe<Scalars['Boolean']>;
-  featuredimage?: Maybe<File>;
-  tags?: Maybe<Array<Maybe<Scalars['String']>>>;
-};
-
-
-export type MdxFrontmatterDateArgs = {
-  formatString?: Maybe<Scalars['String']>;
-  fromNow?: Maybe<Scalars['Boolean']>;
-  difference?: Maybe<Scalars['String']>;
-  locale?: Maybe<Scalars['String']>;
 };
 
 export type MdxFrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   templateKey?: Maybe<StringQueryOperatorInput>;
-  path?: Maybe<StringQueryOperatorInput>;
-  image?: Maybe<FileFilterInput>;
-  heading?: Maybe<StringQueryOperatorInput>;
-  description?: Maybe<StringQueryOperatorInput>;
-  intro?: Maybe<MdxFrontmatterIntroFilterInput>;
-  main?: Maybe<MdxFrontmatterMainFilterInput>;
-  testimonials?: Maybe<MdxFrontmatterTestimonialsFilterListInput>;
-  full_image?: Maybe<FileFilterInput>;
-  pricing?: Maybe<MdxFrontmatterPricingFilterInput>;
-  subheading?: Maybe<StringQueryOperatorInput>;
-  mainpitch?: Maybe<MdxFrontmatterMainpitchFilterInput>;
-  date?: Maybe<DateQueryOperatorInput>;
-  featuredpost?: Maybe<BooleanQueryOperatorInput>;
-  featuredimage?: Maybe<FileFilterInput>;
-  tags?: Maybe<StringQueryOperatorInput>;
-};
-
-export type MdxFrontmatterIntro = {
-  blurbs?: Maybe<Array<Maybe<MdxFrontmatterIntroBlurbs>>>;
-  heading?: Maybe<Scalars['String']>;
-  description?: Maybe<Scalars['String']>;
-};
-
-export type MdxFrontmatterIntroBlurbs = {
-  image?: Maybe<File>;
-  text?: Maybe<Scalars['String']>;
-};
-
-export type MdxFrontmatterIntroBlurbsFilterInput = {
-  image?: Maybe<FileFilterInput>;
-  text?: Maybe<StringQueryOperatorInput>;
-};
-
-export type MdxFrontmatterIntroBlurbsFilterListInput = {
-  elemMatch?: Maybe<MdxFrontmatterIntroBlurbsFilterInput>;
-};
-
-export type MdxFrontmatterIntroFilterInput = {
-  blurbs?: Maybe<MdxFrontmatterIntroBlurbsFilterListInput>;
-  heading?: Maybe<StringQueryOperatorInput>;
-  description?: Maybe<StringQueryOperatorInput>;
-};
-
-export type MdxFrontmatterMain = {
-  heading?: Maybe<Scalars['String']>;
-  description?: Maybe<Scalars['String']>;
-  image1?: Maybe<MdxFrontmatterMainImage1>;
-  image2?: Maybe<MdxFrontmatterMainImage2>;
-  image3?: Maybe<MdxFrontmatterMainImage3>;
-};
-
-export type MdxFrontmatterMainFilterInput = {
-  heading?: Maybe<StringQueryOperatorInput>;
-  description?: Maybe<StringQueryOperatorInput>;
-  image1?: Maybe<MdxFrontmatterMainImage1FilterInput>;
-  image2?: Maybe<MdxFrontmatterMainImage2FilterInput>;
-  image3?: Maybe<MdxFrontmatterMainImage3FilterInput>;
-};
-
-export type MdxFrontmatterMainImage1 = {
-  alt?: Maybe<Scalars['String']>;
-  image?: Maybe<File>;
-};
-
-export type MdxFrontmatterMainImage1FilterInput = {
-  alt?: Maybe<StringQueryOperatorInput>;
-  image?: Maybe<FileFilterInput>;
-};
-
-export type MdxFrontmatterMainImage2 = {
-  alt?: Maybe<Scalars['String']>;
-  image?: Maybe<File>;
-};
-
-export type MdxFrontmatterMainImage2FilterInput = {
-  alt?: Maybe<StringQueryOperatorInput>;
-  image?: Maybe<FileFilterInput>;
-};
-
-export type MdxFrontmatterMainImage3 = {
-  alt?: Maybe<Scalars['String']>;
-  image?: Maybe<File>;
-};
-
-export type MdxFrontmatterMainImage3FilterInput = {
-  alt?: Maybe<StringQueryOperatorInput>;
-  image?: Maybe<FileFilterInput>;
-};
-
-export type MdxFrontmatterMainpitch = {
-  title?: Maybe<Scalars['String']>;
-  description?: Maybe<Scalars['String']>;
-};
-
-export type MdxFrontmatterMainpitchFilterInput = {
-  title?: Maybe<StringQueryOperatorInput>;
-  description?: Maybe<StringQueryOperatorInput>;
-};
-
-export type MdxFrontmatterPricing = {
-  heading?: Maybe<Scalars['String']>;
-  description?: Maybe<Scalars['String']>;
-  plans?: Maybe<Array<Maybe<MdxFrontmatterPricingPlans>>>;
-};
-
-export type MdxFrontmatterPricingFilterInput = {
-  heading?: Maybe<StringQueryOperatorInput>;
-  description?: Maybe<StringQueryOperatorInput>;
-  plans?: Maybe<MdxFrontmatterPricingPlansFilterListInput>;
-};
-
-export type MdxFrontmatterPricingPlans = {
-  description?: Maybe<Scalars['String']>;
-  items?: Maybe<Array<Maybe<Scalars['String']>>>;
-  plan?: Maybe<Scalars['String']>;
-  price?: Maybe<Scalars['String']>;
-};
-
-export type MdxFrontmatterPricingPlansFilterInput = {
-  description?: Maybe<StringQueryOperatorInput>;
-  items?: Maybe<StringQueryOperatorInput>;
-  plan?: Maybe<StringQueryOperatorInput>;
-  price?: Maybe<StringQueryOperatorInput>;
-};
-
-export type MdxFrontmatterPricingPlansFilterListInput = {
-  elemMatch?: Maybe<MdxFrontmatterPricingPlansFilterInput>;
-};
-
-export type MdxFrontmatterTestimonials = {
-  author?: Maybe<Scalars['String']>;
-  quote?: Maybe<Scalars['String']>;
-};
-
-export type MdxFrontmatterTestimonialsFilterInput = {
-  author?: Maybe<StringQueryOperatorInput>;
-  quote?: Maybe<StringQueryOperatorInput>;
-};
-
-export type MdxFrontmatterTestimonialsFilterListInput = {
-  elemMatch?: Maybe<MdxFrontmatterTestimonialsFilterInput>;
 };
 
 export type MdxGroupConnection = {
@@ -3051,179 +2545,19 @@ export type SitePageConnectionGroupArgs = {
 };
 
 export type SitePageContext = {
-  tag?: Maybe<Scalars['String']>;
   frontmatter?: Maybe<SitePageContextFrontmatter>;
 };
 
 export type SitePageContextFilterInput = {
-  tag?: Maybe<StringQueryOperatorInput>;
   frontmatter?: Maybe<SitePageContextFrontmatterFilterInput>;
 };
 
 export type SitePageContextFrontmatter = {
   templateKey?: Maybe<Scalars['String']>;
-  title?: Maybe<Scalars['String']>;
-  image?: Maybe<Scalars['String']>;
-  heading?: Maybe<Scalars['String']>;
-  subheading?: Maybe<Scalars['String']>;
-  mainpitch?: Maybe<SitePageContextFrontmatterMainpitch>;
-  description?: Maybe<Scalars['String']>;
-  intro?: Maybe<SitePageContextFrontmatterIntro>;
-  main?: Maybe<SitePageContextFrontmatterMain>;
-  date?: Maybe<Scalars['Date']>;
-  featuredpost?: Maybe<Scalars['Boolean']>;
-  featuredimage?: Maybe<Scalars['String']>;
-  tags?: Maybe<Array<Maybe<Scalars['String']>>>;
-  path?: Maybe<Scalars['String']>;
-  testimonials?: Maybe<Array<Maybe<SitePageContextFrontmatterTestimonials>>>;
-  full_image?: Maybe<Scalars['String']>;
-  pricing?: Maybe<SitePageContextFrontmatterPricing>;
 };
 
 export type SitePageContextFrontmatterFilterInput = {
   templateKey?: Maybe<StringQueryOperatorInput>;
-  title?: Maybe<StringQueryOperatorInput>;
-  image?: Maybe<StringQueryOperatorInput>;
-  heading?: Maybe<StringQueryOperatorInput>;
-  subheading?: Maybe<StringQueryOperatorInput>;
-  mainpitch?: Maybe<SitePageContextFrontmatterMainpitchFilterInput>;
-  description?: Maybe<StringQueryOperatorInput>;
-  intro?: Maybe<SitePageContextFrontmatterIntroFilterInput>;
-  main?: Maybe<SitePageContextFrontmatterMainFilterInput>;
-  date?: Maybe<DateQueryOperatorInput>;
-  featuredpost?: Maybe<BooleanQueryOperatorInput>;
-  featuredimage?: Maybe<StringQueryOperatorInput>;
-  tags?: Maybe<StringQueryOperatorInput>;
-  path?: Maybe<StringQueryOperatorInput>;
-  testimonials?: Maybe<SitePageContextFrontmatterTestimonialsFilterListInput>;
-  full_image?: Maybe<StringQueryOperatorInput>;
-  pricing?: Maybe<SitePageContextFrontmatterPricingFilterInput>;
-};
-
-export type SitePageContextFrontmatterIntro = {
-  blurbs?: Maybe<Array<Maybe<SitePageContextFrontmatterIntroBlurbs>>>;
-  heading?: Maybe<Scalars['String']>;
-  description?: Maybe<Scalars['String']>;
-};
-
-export type SitePageContextFrontmatterIntroBlurbs = {
-  image?: Maybe<Scalars['String']>;
-  text?: Maybe<Scalars['String']>;
-};
-
-export type SitePageContextFrontmatterIntroBlurbsFilterInput = {
-  image?: Maybe<StringQueryOperatorInput>;
-  text?: Maybe<StringQueryOperatorInput>;
-};
-
-export type SitePageContextFrontmatterIntroBlurbsFilterListInput = {
-  elemMatch?: Maybe<SitePageContextFrontmatterIntroBlurbsFilterInput>;
-};
-
-export type SitePageContextFrontmatterIntroFilterInput = {
-  blurbs?: Maybe<SitePageContextFrontmatterIntroBlurbsFilterListInput>;
-  heading?: Maybe<StringQueryOperatorInput>;
-  description?: Maybe<StringQueryOperatorInput>;
-};
-
-export type SitePageContextFrontmatterMain = {
-  heading?: Maybe<Scalars['String']>;
-  description?: Maybe<Scalars['String']>;
-  image1?: Maybe<SitePageContextFrontmatterMainImage1>;
-  image2?: Maybe<SitePageContextFrontmatterMainImage2>;
-  image3?: Maybe<SitePageContextFrontmatterMainImage3>;
-};
-
-export type SitePageContextFrontmatterMainFilterInput = {
-  heading?: Maybe<StringQueryOperatorInput>;
-  description?: Maybe<StringQueryOperatorInput>;
-  image1?: Maybe<SitePageContextFrontmatterMainImage1FilterInput>;
-  image2?: Maybe<SitePageContextFrontmatterMainImage2FilterInput>;
-  image3?: Maybe<SitePageContextFrontmatterMainImage3FilterInput>;
-};
-
-export type SitePageContextFrontmatterMainImage1 = {
-  alt?: Maybe<Scalars['String']>;
-  image?: Maybe<Scalars['String']>;
-};
-
-export type SitePageContextFrontmatterMainImage1FilterInput = {
-  alt?: Maybe<StringQueryOperatorInput>;
-  image?: Maybe<StringQueryOperatorInput>;
-};
-
-export type SitePageContextFrontmatterMainImage2 = {
-  alt?: Maybe<Scalars['String']>;
-  image?: Maybe<Scalars['String']>;
-};
-
-export type SitePageContextFrontmatterMainImage2FilterInput = {
-  alt?: Maybe<StringQueryOperatorInput>;
-  image?: Maybe<StringQueryOperatorInput>;
-};
-
-export type SitePageContextFrontmatterMainImage3 = {
-  alt?: Maybe<Scalars['String']>;
-  image?: Maybe<Scalars['String']>;
-};
-
-export type SitePageContextFrontmatterMainImage3FilterInput = {
-  alt?: Maybe<StringQueryOperatorInput>;
-  image?: Maybe<StringQueryOperatorInput>;
-};
-
-export type SitePageContextFrontmatterMainpitch = {
-  title?: Maybe<Scalars['String']>;
-  description?: Maybe<Scalars['String']>;
-};
-
-export type SitePageContextFrontmatterMainpitchFilterInput = {
-  title?: Maybe<StringQueryOperatorInput>;
-  description?: Maybe<StringQueryOperatorInput>;
-};
-
-export type SitePageContextFrontmatterPricing = {
-  heading?: Maybe<Scalars['String']>;
-  description?: Maybe<Scalars['String']>;
-  plans?: Maybe<Array<Maybe<SitePageContextFrontmatterPricingPlans>>>;
-};
-
-export type SitePageContextFrontmatterPricingFilterInput = {
-  heading?: Maybe<StringQueryOperatorInput>;
-  description?: Maybe<StringQueryOperatorInput>;
-  plans?: Maybe<SitePageContextFrontmatterPricingPlansFilterListInput>;
-};
-
-export type SitePageContextFrontmatterPricingPlans = {
-  description?: Maybe<Scalars['String']>;
-  items?: Maybe<Array<Maybe<Scalars['String']>>>;
-  plan?: Maybe<Scalars['String']>;
-  price?: Maybe<Scalars['String']>;
-};
-
-export type SitePageContextFrontmatterPricingPlansFilterInput = {
-  description?: Maybe<StringQueryOperatorInput>;
-  items?: Maybe<StringQueryOperatorInput>;
-  plan?: Maybe<StringQueryOperatorInput>;
-  price?: Maybe<StringQueryOperatorInput>;
-};
-
-export type SitePageContextFrontmatterPricingPlansFilterListInput = {
-  elemMatch?: Maybe<SitePageContextFrontmatterPricingPlansFilterInput>;
-};
-
-export type SitePageContextFrontmatterTestimonials = {
-  author?: Maybe<Scalars['String']>;
-  quote?: Maybe<Scalars['String']>;
-};
-
-export type SitePageContextFrontmatterTestimonialsFilterInput = {
-  author?: Maybe<StringQueryOperatorInput>;
-  quote?: Maybe<StringQueryOperatorInput>;
-};
-
-export type SitePageContextFrontmatterTestimonialsFilterListInput = {
-  elemMatch?: Maybe<SitePageContextFrontmatterTestimonialsFilterInput>;
 };
 
 export type SitePageEdge = {
@@ -3325,32 +2659,7 @@ export type SitePageFieldsEnum =
   | 'internal___owner'
   | 'internal___type'
   | 'isCreatedByStatefulCreatePages'
-  | 'context___tag'
   | 'context___frontmatter___templateKey'
-  | 'context___frontmatter___title'
-  | 'context___frontmatter___image'
-  | 'context___frontmatter___heading'
-  | 'context___frontmatter___subheading'
-  | 'context___frontmatter___mainpitch___title'
-  | 'context___frontmatter___mainpitch___description'
-  | 'context___frontmatter___description'
-  | 'context___frontmatter___intro___blurbs'
-  | 'context___frontmatter___intro___heading'
-  | 'context___frontmatter___intro___description'
-  | 'context___frontmatter___main___heading'
-  | 'context___frontmatter___main___description'
-  | 'context___frontmatter___date'
-  | 'context___frontmatter___featuredpost'
-  | 'context___frontmatter___featuredimage'
-  | 'context___frontmatter___tags'
-  | 'context___frontmatter___path'
-  | 'context___frontmatter___testimonials'
-  | 'context___frontmatter___testimonials___author'
-  | 'context___frontmatter___testimonials___quote'
-  | 'context___frontmatter___full_image'
-  | 'context___frontmatter___pricing___heading'
-  | 'context___frontmatter___pricing___description'
-  | 'context___frontmatter___pricing___plans'
   | 'pluginCreator___id'
   | 'pluginCreator___parent___id'
   | 'pluginCreator___parent___parent___id'
@@ -3399,10 +2708,12 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___plugins___version'
   | 'pluginCreator___pluginOptions___plugins___browserAPIs'
   | 'pluginCreator___pluginOptions___plugins___pluginFilepath'
-  | 'pluginCreator___pluginOptions___defaultLayouts___default'
   | 'pluginCreator___pluginOptions___fileName'
   | 'pluginCreator___pluginOptions___path'
   | 'pluginCreator___pluginOptions___name'
+  | 'pluginCreator___pluginOptions___defaultLayouts___pages'
+  | 'pluginCreator___pluginOptions___remarkPlugins'
+  | 'pluginCreator___pluginOptions___remarkPlugins___resolve'
   | 'pluginCreator___pluginOptions___maxWidth'
   | 'pluginCreator___pluginOptions___destinationDir'
   | 'pluginCreator___pluginOptions___modulePath'
@@ -3601,15 +2912,17 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___plugins___id'
   | 'pluginOptions___plugins___name'
   | 'pluginOptions___plugins___version'
-  | 'pluginOptions___plugins___pluginOptions___name'
   | 'pluginOptions___plugins___pluginOptions___maxWidth'
   | 'pluginOptions___plugins___pluginOptions___destinationDir'
   | 'pluginOptions___plugins___browserAPIs'
   | 'pluginOptions___plugins___pluginFilepath'
-  | 'pluginOptions___defaultLayouts___default'
   | 'pluginOptions___fileName'
   | 'pluginOptions___path'
   | 'pluginOptions___name'
+  | 'pluginOptions___defaultLayouts___pages'
+  | 'pluginOptions___remarkPlugins'
+  | 'pluginOptions___remarkPlugins___resolve'
+  | 'pluginOptions___remarkPlugins___options___maxWidth'
   | 'pluginOptions___maxWidth'
   | 'pluginOptions___destinationDir'
   | 'pluginOptions___modulePath'
@@ -3732,10 +3045,11 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 
 export type SitePluginPluginOptions = {
   plugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPlugins>>>;
-  defaultLayouts?: Maybe<SitePluginPluginOptionsDefaultLayouts>;
   fileName?: Maybe<Scalars['String']>;
   path?: Maybe<Scalars['String']>;
   name?: Maybe<Scalars['String']>;
+  defaultLayouts?: Maybe<SitePluginPluginOptionsDefaultLayouts>;
+  remarkPlugins?: Maybe<Array<Maybe<SitePluginPluginOptionsRemarkPlugins>>>;
   maxWidth?: Maybe<Scalars['Int']>;
   destinationDir?: Maybe<Scalars['String']>;
   modulePath?: Maybe<Scalars['String']>;
@@ -3745,19 +3059,20 @@ export type SitePluginPluginOptions = {
 };
 
 export type SitePluginPluginOptionsDefaultLayouts = {
-  default?: Maybe<Scalars['String']>;
+  pages?: Maybe<Scalars['String']>;
 };
 
 export type SitePluginPluginOptionsDefaultLayoutsFilterInput = {
-  default?: Maybe<StringQueryOperatorInput>;
+  pages?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsFilterInput = {
   plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
-  defaultLayouts?: Maybe<SitePluginPluginOptionsDefaultLayoutsFilterInput>;
   fileName?: Maybe<StringQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   name?: Maybe<StringQueryOperatorInput>;
+  defaultLayouts?: Maybe<SitePluginPluginOptionsDefaultLayoutsFilterInput>;
+  remarkPlugins?: Maybe<SitePluginPluginOptionsRemarkPluginsFilterListInput>;
   maxWidth?: Maybe<IntQueryOperatorInput>;
   destinationDir?: Maybe<StringQueryOperatorInput>;
   modulePath?: Maybe<StringQueryOperatorInput>;
@@ -3791,15 +3106,35 @@ export type SitePluginPluginOptionsPluginsFilterListInput = {
 };
 
 export type SitePluginPluginOptionsPluginsPluginOptions = {
-  name?: Maybe<Scalars['String']>;
   maxWidth?: Maybe<Scalars['Int']>;
   destinationDir?: Maybe<Scalars['String']>;
 };
 
 export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
-  name?: Maybe<StringQueryOperatorInput>;
   maxWidth?: Maybe<IntQueryOperatorInput>;
   destinationDir?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsRemarkPlugins = {
+  resolve?: Maybe<Scalars['String']>;
+  options?: Maybe<SitePluginPluginOptionsRemarkPluginsOptions>;
+};
+
+export type SitePluginPluginOptionsRemarkPluginsFilterInput = {
+  resolve?: Maybe<StringQueryOperatorInput>;
+  options?: Maybe<SitePluginPluginOptionsRemarkPluginsOptionsFilterInput>;
+};
+
+export type SitePluginPluginOptionsRemarkPluginsFilterListInput = {
+  elemMatch?: Maybe<SitePluginPluginOptionsRemarkPluginsFilterInput>;
+};
+
+export type SitePluginPluginOptionsRemarkPluginsOptions = {
+  maxWidth?: Maybe<Scalars['Int']>;
+};
+
+export type SitePluginPluginOptionsRemarkPluginsOptionsFilterInput = {
+  maxWidth?: Maybe<IntQueryOperatorInput>;
 };
 
 export type SitePluginSortInput = {
@@ -3834,95 +3169,6 @@ export type StringQueryOperatorInput = {
   regex?: Maybe<Scalars['String']>;
   glob?: Maybe<Scalars['String']>;
 };
-
-export type BlogRollQueryQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type BlogRollQueryQuery = { allMdx: { edges: Array<{ node: (
-        Pick<Mdx, 'excerpt' | 'id' | 'slug'>
-        & { frontmatter?: Maybe<(
-          Pick<MdxFrontmatter, 'title' | 'templateKey' | 'date' | 'featuredpost'>
-          & { featuredimage?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }> }
-        )> }
-      ) }> } };
-
-export type Site_Metadata_QueryQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type Site_Metadata_QueryQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title' | 'description'>> }> };
-
-export type TagsQueryQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type TagsQueryQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title'>> }>, allMdx: { group: Array<Pick<MdxGroupConnection, 'fieldValue' | 'totalCount'>> } };
-
-export type AboutPageQueryVariables = Exact<{
-  id: Scalars['String'];
-}>;
-
-
-export type AboutPageQuery = { mdx?: Maybe<(
-    Pick<Mdx, 'body'>
-    & { frontmatter?: Maybe<Pick<MdxFrontmatter, 'title'>> }
-  )> };
-
-export type IndexPageTemplateQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type IndexPageTemplateQuery = { mdx?: Maybe<{ frontmatter?: Maybe<(
-      Pick<MdxFrontmatter, 'title' | 'heading' | 'subheading' | 'description'>
-      & { image?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }>, mainpitch?: Maybe<Pick<MdxFrontmatterMainpitch, 'title' | 'description'>>, intro?: Maybe<(
-        Pick<MdxFrontmatterIntro, 'heading' | 'description'>
-        & { blurbs?: Maybe<Array<Maybe<(
-          Pick<MdxFrontmatterIntroBlurbs, 'text'>
-          & { image?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }> }
-        )>>> }
-      )> }
-    )> }> };
-
-export type ProductPageQueryVariables = Exact<{
-  id: Scalars['String'];
-}>;
-
-
-export type ProductPageQuery = { mdx?: Maybe<{ frontmatter?: Maybe<(
-      Pick<MdxFrontmatter, 'title' | 'heading' | 'description'>
-      & { image?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }>, intro?: Maybe<(
-        Pick<MdxFrontmatterIntro, 'heading' | 'description'>
-        & { blurbs?: Maybe<Array<Maybe<(
-          Pick<MdxFrontmatterIntroBlurbs, 'text'>
-          & { image?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }> }
-        )>>> }
-      )>, main?: Maybe<(
-        Pick<MdxFrontmatterMain, 'heading' | 'description'>
-        & { image1?: Maybe<(
-          Pick<MdxFrontmatterMainImage1, 'alt'>
-          & { image?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }> }
-        )>, image2?: Maybe<(
-          Pick<MdxFrontmatterMainImage2, 'alt'>
-          & { image?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }> }
-        )>, image3?: Maybe<(
-          Pick<MdxFrontmatterMainImage3, 'alt'>
-          & { image?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }> }
-        )> }
-      )>, testimonials?: Maybe<Array<Maybe<Pick<MdxFrontmatterTestimonials, 'author' | 'quote'>>>>, full_image?: Maybe<{ childImageSharp?: Maybe<{ fluid?: Maybe<GatsbyImageSharpFluidFragment> }> }>, pricing?: Maybe<(
-        Pick<MdxFrontmatterPricing, 'heading' | 'description'>
-        & { plans?: Maybe<Array<Maybe<Pick<MdxFrontmatterPricingPlans, 'description' | 'items' | 'plan' | 'price'>>>> }
-      )> }
-    )> }> };
-
-export type TagPageQueryVariables = Exact<{
-  tag?: Maybe<Scalars['String']>;
-}>;
-
-
-export type TagPageQuery = { site?: Maybe<{ siteMetadata?: Maybe<Pick<SiteSiteMetadata, 'title'>> }>, allMdx: (
-    Pick<MdxConnection, 'totalCount'>
-    & { edges: Array<{ node: (
-        Pick<Mdx, 'slug'>
-        & { frontmatter?: Maybe<Pick<MdxFrontmatter, 'title'>> }
-      ) }> }
-  ) };
 
 export type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 

@@ -8,19 +8,11 @@ module.exports = {
         `gatsby-plugin-typescript`,
         `gatsby-plugin-styled-components`,
         "gatsby-plugin-react-helmet",
-        {
-            resolve: `gatsby-plugin-mdx`,
-            options: {
-                defaultLayouts: {
-                    default: require.resolve("./src/templates/blog-post.tsx"),
-                }      
-            }
-        },
         "gatsby-plugin-sass",
         {
             resolve: "gatsby-plugin-graphql-codegen",
             options: {
-                fileName: `types/graphql-types.d.ts`
+                fileName: `src/types/graphql-types.d.ts`
             }
         },
         {
@@ -45,18 +37,31 @@ module.exports = {
                 name: "images"
             }
         },
+        {
+            resolve: `gatsby-plugin-mdx`,
+            options: {
+                defaultLayouts: {
+                    pages: require.resolve("./src/templates/view-templates/PageView.tsx"),
+                },
+                remarkPlugins: [
+                    {
+                        resolve: "gatsby-remark-images",
+                        options: {
+                            // It's important to specify the maxWidth (in pixels) of
+                            // the content container as this plugin uses this as the
+                            // base for generating different widths of each image.
+                            maxWidth: 2048
+                        }
+                    }
+                ]
+            }
+        },
         "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
         {
             resolve: "gatsby-transformer-remark",
             options: {
                 plugins: [
-                    {
-                        resolve: "gatsby-remark-relative-images",
-                        options: {
-                            name: "uploads"
-                        }
-                    },
                     {
                         resolve: "gatsby-remark-images",
                         options: {
